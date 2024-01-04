@@ -1,0 +1,46 @@
+.hero{
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url('../assets/background_hero_img.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid rgb(50, 50, 50);
+}
+
+.logo{
+    color: red;
+}
+
+
+.button_danger{
+    background-color: rgb(229,9,20);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px !important;
+}
+
+.row_padding{
+    padding-top: 20px;
+}
+
+.left_items{
+    display: flex;
+    gap: 21px;
+    flex: 4 2;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.left-items:nth-child(0){
+    flex: 8;
+    min-height: 130px;
+}
+.left-items:nth-child(1){
+    flex: 2;
+}
+
+.icon_image{
+    position: absolute;
+    top: 8px;
+    left: 9px;
+}
