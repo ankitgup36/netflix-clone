@@ -1,0 +1,29 @@
+.button_danger{
+    background-color: rgb(229,9,20);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.625rem !important;
+    width: 12rem;
+}
+
+.con_dis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form_col{
+    display: flex;
+    justify-content: end;
+}
+
+.btn_col{
+    display: flex;
+}
+
+.form_size{
+    width: 25rem;
+}

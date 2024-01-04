@@ -1,8 +1,12 @@
 .hero{
-    background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url('../assets/background_hero_img.jpg');
-    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.9) 100%), url('../assets/background_hero_img.jpg');
+    min-height: 100vh;
+    height: fit-content;
     background-repeat: no-repeat;
+    background-size: cover;
     border-bottom: 10px solid rgb(50, 50, 50);
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .logo{
@@ -17,10 +21,12 @@
     align-items: center;
     justify-content: center;
     height: 40px !important;
+    min-width: fit-content
 }
 
 .row_padding{
-    padding-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .left_items{
@@ -43,4 +49,21 @@
     position: absolute;
     top: 8px;
     left: 9px;
+}
+
+.hero_text_container{
+    text-align: center;
+    color: white;
+    margin-block: 10rem;
+}
+.hero_text_container h1{
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero_text_container p{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    margin: 0;
 }

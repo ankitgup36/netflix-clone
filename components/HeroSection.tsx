@@ -2,9 +2,10 @@
 import Image from "next/image";
 import styles from "./HeroSection.module.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import img from "../assets/netflix_logo.png";
+import img from "../assets/netflixx.svg";
 import Select, { StylesConfig } from "react-select";
-import langIcon from "../assets/langIcon.png";
+import CustomSelect from "./UI/Select";
+import MembershipForm from "./UI/MembershipForm";
 
 const customStyles: StylesConfig = {
   option: (provided) => ({
@@ -71,10 +72,6 @@ const customStyles: StylesConfig = {
 };
 
 const HeroSection = () => {
-  const options = [
-    { value: "english", label: "English", icon: langIcon },
-    { value: "hindi", label: "हिन्दी", icon: langIcon },
-  ];
   return (
     <div className={styles.hero}>
       <Container>
@@ -82,27 +79,23 @@ const HeroSection = () => {
           <Col md={9} sm={2}>
             <Image
               width={150}
-              height={40}
+              height={150}
               alt="Logo"
               src={img}
               className={styles.logo}
             />
           </Col>
           <Col md={3} sm={6} className={styles.left_items}>
-            <div className="position-relative">
-              <Select options={options} styles={customStyles} />
-              <Image
-                src={langIcon}
-                width={18}
-                height={18}
-                alt="Language"
-                className={styles.icon_image}
-              />
-            </div>
+            <CustomSelect />
             <Button variant="danger" className={styles.button_danger}>
               Sign in
             </Button>
           </Col>
+        </Row>
+        <Row className={styles.hero_text_container}>
+          <h1>Unlimited movies, TV shows and more</h1>
+          <p>Watch anywhere. Cancel anytime.</p>
+          <MembershipForm />
         </Row>
       </Container>
     </div>

@@ -1,0 +1,43 @@
+.hero{
+    background-color: black;
+    min-height: 70vh;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid rgb(50, 50, 50);
+}
+
+.hero_text_container{
+    text-align: start;
+    color: white;
+    margin-block: 10rem;
+}
+
+.hero_text_container h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.hero_text_container p{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.row_flex{
+    display: flex;
+    align-items: center
+}
+
+.container_mar{
+    padding-block: 5rem;
+}
+
+.col_ch{
+    box-sizing: border-box;
+    /* content: ; */
+    object-fit: "contain"
+}
+
+.image_o{
+    object-fit: contain;
+}
